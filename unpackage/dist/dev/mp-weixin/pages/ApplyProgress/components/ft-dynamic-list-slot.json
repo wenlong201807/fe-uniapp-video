@@ -1,0 +1,11 @@
+{
+  "componentGenerics": {
+    "scoped-slots-title": true,
+    "scoped-slots-content": true
+  },
+  "component": true,
+  "usingComponents": {
+    "u-switch": "/node-modules/uview-ui/components/u-switch/u-switch",
+    "ft-checkbox": "/pages/ApplyProgress/components/ft-checkbox"
+  }
+}

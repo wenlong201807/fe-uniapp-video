@@ -1,21 +1,22 @@
 <script>
 export default {
-  onLaunch: function () {
-    console.log('App Launch');
-    // 初始化用户登录状态
-    this.$store.dispatch('initUser');
-  },
-  onShow: function () {
-    console.log('App Show');
-  },
-  onHide: function () {
-    console.log('App Hide');
-  },
-};
+    onLaunch: function () {
+        console.log('App Launch')
+        // 初始化用户登录状态
+        // this.$store.dispatch('initUser')
+    },
+    onShow: function () {
+        console.log('App Show')
+    },
+    onHide: function () {
+        console.log('App Hide')
+    },
+}
 </script>
 
-<style>
+<style lang="scss">
 /*每个页面公共css */
+
 /* 引入官方样式库 */
 /* #ifndef APP-NVUE */
 @import url('./pages/common/uni.css');
@@ -30,4 +31,12 @@ export default {
 /* #ifndef APP-NVUE */
 @import url('./pages/common/icon.css');
 /* #endif */
+
+/* 页面适配刘海屏 */
+.safe-area {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
 </style>

@@ -1,0 +1,1 @@
+<view><text>{{"Header=="+item.title+" ==="+index}}</text><text data-event-opts="{{[['tap',[['handleOther',['$0','$1'],['item','index']]]]]}}" class="title__other" bindtap="__e">other data</text></view>

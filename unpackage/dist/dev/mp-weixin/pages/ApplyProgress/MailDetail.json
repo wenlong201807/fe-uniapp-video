@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "办卡邮寄进度查询",
+  "usingComponents": {
+    "custom-step": "/pages/ApplyProgress/components/ft-steps"
+  }
+}

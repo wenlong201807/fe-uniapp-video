@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "办卡进度列表",
+  "usingComponents": {
+    "ft-card-list": "/pages/ApplyProgress/components/ft-card-list"
+  }
+}

@@ -1,0 +1,1 @@
+<view><text>黑色字体</text><text>{{content}}</text><text>黑色sfbdf字体</text></view>

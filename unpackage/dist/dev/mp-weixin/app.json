@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/ApplyProgress/ApplyTranscribe",
+    "pages/ApplyProgress/ApplyProgressList",
+    "pages/ApplyProgress/ApplyProgressDetail",
+    "pages/ApplyProgress/MailDetail",
     "pages/index/index",
     "pages/cate/cate",
     "pages/my/my",
