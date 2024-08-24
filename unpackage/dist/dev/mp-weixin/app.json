@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/ApplyProgress/ThreeList",
+    "pages/ApplyProgress/TwoList",
     "pages/ApplyProgress/ApplyTranscribe",
     "pages/ApplyProgress/ApplyProgressList",
     "pages/ApplyProgress/ApplyProgressDetail",

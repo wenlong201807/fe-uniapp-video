@@ -52,11 +52,15 @@ export default {
                 backgroundColor: 'blue',
             },
             midddleCustomStyles: {
-                with: '180rpx',
-                borderRadius: '20px',
-                border: '1px solid blue',
+                width: '200rpx',
+                height: '68rpx',
+                borderRadius: '44rpx',
+                border: '2rpx solid #005BAB',
                 backgroundColor: '#fff',
                 color: 'blue',
+                fontWeight: 400,
+                fontSize: '28rpx',
+                color: '#005BAB',
             },
             cardInfoMessageList: [{ title: '申请编号', content: 'AP2342353463' }],
             progressList: [
@@ -184,6 +188,14 @@ export default {
     background-color: #f5f5f4;
 }
 
+.right-message-button {
+    width: 200rpx;
+    height: 68rpx;
+    background: #ffffff;
+    border-radius: 44rpx;
+    border: 2rpx solid #005bab;
+}
+
 /* 制卡信息 */
 .card-wrap {
     .card-wrap-item {
@@ -191,16 +203,28 @@ export default {
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
-        padding: 10px 20px;
-        border-bottom: 0.5px solid #ccc;
+        padding: 0 30rpx;
+        height: 100rpx;
+        font-size: 28rpx;
+        color: #272727;
+        font-weight: 400;
+        border-bottom: 1rpx solid #f5f5f4;
     }
 
-    /* .item-left {
-        color: #ccc;
-    } */
+    .item-left {
+        display: flex;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     .item-right {
+        display: flex;
+        height: 100%;
         width: 300rpx;
-        color: grey;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -215,10 +239,17 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ccc;
+    background: #f7f8fa;
 
     .main-button-wrap {
-        width: 80%;
+        width: 100%;
+        border-radius: 44rpx;
+        margin: 0 30rpx;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 500;
+        font-size: 30rpx;
+        color: #ffffff;
+        background: #005bab;
     }
 }
 

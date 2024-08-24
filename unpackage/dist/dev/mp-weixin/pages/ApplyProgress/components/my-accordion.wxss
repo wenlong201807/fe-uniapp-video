@@ -1,0 +1,53 @@
+
+.accordion-container.data-v-4bb5dfa3 {
+    border-bottom: 1px solid #ddd;
+}
+.accordion-header.data-v-4bb5dfa3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rpx 20rpx;
+    background-color: #f9f9f9;
+}
+.accordion-content.data-v-4bb5dfa3 {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+.accordion-content.open.data-v-4bb5dfa3 {
+    height: auto;
+    opacity: 1;
+}
+.rotate-icon.data-v-4bb5dfa3 {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+@-webkit-keyframes slide-down-data-v-4bb5dfa3 {
+from {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+}
+to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+}
+}
+@keyframes slide-down-data-v-4bb5dfa3 {
+from {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+}
+to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+}
+}
+

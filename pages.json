@@ -4,6 +4,20 @@
     },
     "pages": [
         {
+            "path": "pages/ApplyProgress/ThreeList",
+            "style": {
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "展开收起列表"
+            }
+        },
+        {
+            "path": "pages/ApplyProgress/TwoList",
+            "style": {
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "二级列表"
+            }
+        },
+        {
             "path": "pages/ApplyProgress/ApplyTranscribe",
             "style": {
                 "enablePullDownRefresh": true,

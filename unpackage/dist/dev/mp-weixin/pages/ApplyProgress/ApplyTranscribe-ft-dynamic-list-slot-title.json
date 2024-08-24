@@ -2,10 +2,7 @@
   "component": true,
   "usingComponents": {
     "ApplyTranscribe-ft-dynamic-list-slot-title": "/pages/ApplyProgress/ApplyTranscribe-ft-dynamic-list-slot-title",
-    "ApplyTranscribe-ft-checkbox-label": "/pages/ApplyProgress/ApplyTranscribe-ft-checkbox-label",
     "ApplyTranscribe-ft-dynamic-list-slot-content": "/pages/ApplyProgress/ApplyTranscribe-ft-dynamic-list-slot-content",
-    "u-collapse": "/node-modules/uview-ui/components/u-collapse/u-collapse",
-    "u-collapse-item": "/node-modules/uview-ui/components/u-collapse-item/u-collapse-item",
     "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
     "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
     "ft-expand": "/pages/ApplyProgress/components/ft-expand",

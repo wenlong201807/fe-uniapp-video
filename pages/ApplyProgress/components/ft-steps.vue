@@ -15,12 +15,18 @@
                             <view
                                 :class="{
                                     'lt-text-title': true,
-                                    'lt-text-title-right': item.title === '邮寄',
+                                    'lt-text-title-active': index === 0,
                                 }">
                                 <view>{{ item.title }}</view>
                                 <slot name="ProgressDetailSlot" v-if="item.title === '邮寄'"></slot>
                             </view>
-                            <view class="lt-text-desc">{{ item.time }}</view>
+                            <view
+                                :class="{
+                                    'lt-text-desc': true,
+                                    'lt-text-desc-active': index === 0,
+                                }"
+                                >{{ item.time }}</view
+                            >
                         </view>
                     </view>
                     <view class="white-line"></view>
@@ -98,9 +104,20 @@ export default {
                         font-size: 16px;
                         line-height: 18px;
                         .lt-text-title {
-                            color: rgb(150, 150, 150);
-                            font-size: 28rpx;
-                            margin-bottom: 6rpx;
+                            font-family: PingFangSC, PingFang SC;
+                            font-weight: 500;
+                            font-size: 32rpx;
+                            color: #005bab;
+                            line-height: 44rpx;
+
+                            margin-bottom: 4rpx;
+
+                            &-active {
+                                font-weight: 400;
+                                font-size: 28rpx;
+                                color: #005bab;
+                                line-height: 40rpx;
+                            }
                         }
                         .lt-text-title-right {
                             display: flex;
@@ -109,6 +126,10 @@ export default {
                             align-items: center;
                         }
                         .lt-text-desc {
+                            font-family: PingFangSC, PingFang SC;
+                            font-weight: 400;
+                            font-size: 28rpx;
+                            color: #646566;
                             margin-bottom: 8px;
                         }
                     }

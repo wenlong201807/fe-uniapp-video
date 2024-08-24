@@ -47,20 +47,26 @@ export default {
             ],
         },
     },
+    data() {
+        return {
+            actionNumber: 1,
+        }
+    },
     components: {
         ftCheckbox,
     },
     watch: {
-        // payTypeList: {
-        //     handler(val) {
-        //         console.log('ft-list-slot-watch', val)
-        //     },
-        //     deep: true,
-        // },
+        actionNumber: {
+            handler(val) {
+                console.log('ft-list-slot-watch', val)
+            },
+            deep: true,
+        },
     },
     methods: {
         handleItemCheck(e, index) {
-            this.$emit('change', { e, index })
+            this.actionNumber += 1
+            this.$emit('change', { e, index, actionNumber: this.actionNumber })
         },
     },
 }

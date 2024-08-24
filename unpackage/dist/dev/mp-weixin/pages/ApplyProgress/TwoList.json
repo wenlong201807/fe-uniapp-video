@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "二级列表",
+  "usingComponents": {
+    "my-checkbox": "/pages/ApplyProgress/components/my-checkbox",
+    "my-accordion": "/pages/ApplyProgress/components/my-accordion"
+  }
+}

@@ -1,0 +1,20 @@
+
+.checkbox-container.data-v-3d75e4b8 {
+    display: flex;
+    align-items: center;
+}
+.checkbox-box.data-v-3d75e4b8 {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox-box.checked.data-v-3d75e4b8 {
+    background-color: #42b983;
+}
+.checkbox-label.data-v-3d75e4b8 {
+    margin-left: 10px;
+}
+

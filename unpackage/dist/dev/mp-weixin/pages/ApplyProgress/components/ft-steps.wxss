@@ -75,9 +75,18 @@
   line-height: 18px;
 }
 .rxlc-step .rxlc-content .content-list .content-list-lt .list-icon-title .lt-text .lt-text-title {
-  color: #969696;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 500;
+  font-size: 32rpx;
+  color: #005bab;
+  line-height: 44rpx;
+  margin-bottom: 4rpx;
+}
+.rxlc-step .rxlc-content .content-list .content-list-lt .list-icon-title .lt-text .lt-text-title-active {
+  font-weight: 400;
   font-size: 28rpx;
-  margin-bottom: 6rpx;
+  color: #005bab;
+  line-height: 40rpx;
 }
 .rxlc-step .rxlc-content .content-list .content-list-lt .list-icon-title .lt-text .lt-text-title-right {
   display: flex;
@@ -86,6 +95,10 @@
   align-items: center;
 }
 .rxlc-step .rxlc-content .content-list .content-list-lt .list-icon-title .lt-text .lt-text-desc {
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #646566;
   margin-bottom: 8px;
 }
 .rxlc-step .rxlc-content .content-list .content-list-lt .white-line {

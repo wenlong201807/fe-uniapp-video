@@ -1,12 +1,12 @@
 <template>
     <!-- :style="{ alignItems: alignItemsMap[alignItems] }" -->
-    <view class="one-line__start" @click="handleCheckedOrNot">
+    <view class="one-line__start" @click="handleCheckedOrNot(!isChecked)">
         <view class="one-line__start__box__wrap">
             <template v-if="icon">
                 <slot name="icon"></slot>
             </template>
             <template v-else>
-                <u-icon v-show="isChecked" name="photo"></u-icon>
+                <u-icon v-show="localSelected" name="photo"></u-icon>
             </template>
         </view>
         <slot name="label" :content="content" ref="labeRef"></slot>
@@ -55,6 +55,7 @@ export default {
 
     data() {
         return {
+            localSelected: this.isChecked,
             alignItemsMap: {
                 top: 'flex-start',
                 mid: 'center',
@@ -62,18 +63,24 @@ export default {
             },
         }
     },
+    watch: {
+        isChecked(newValue) {
+            this.localIsAllChecked = newValue
+        },
+    },
 
     methods: {
-        handleCheckedOrNot() {
-            const currentChildren = this.childrenList.map((child, index) => {
-                if (index === this.index) {
-                    child.isChecked = !this.isChecked
-                }
+        handleCheckedOrNot(e) {
+            this.localIsAllChecked = e
+            // const currentChildren = this.childrenList.map((child, index) => {
+            //     if (index === this.index) {
+            //         child.isChecked = !this.isChecked
+            //     }
 
-                return child
-            })
+            //     return child
+            // })
             this.$emit('handleChildCheckbox', {
-                children: currentChildren,
+                // children: currentChildren,
                 isChecked: !this.isChecked,
                 index: this.index,
                 indexParent: this.indexParent,
