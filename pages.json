@@ -4,6 +4,12 @@
     },
     "pages": [
         {
+            "path": "pages/ApplyProgress/InputList",
+            "style": {
+                "navigationBarTitleText": "细胞组合"
+            }
+        },
+        {
             "path": "pages/ApplyProgress/ThreeList",
             "style": {
                 "enablePullDownRefresh": true,
