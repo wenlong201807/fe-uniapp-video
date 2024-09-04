@@ -18,7 +18,7 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "3.5.4",
+  "libVersion": "3.5.5",
   "appid": "touristappid",
   "projectname": "在线点播app",
   "condition": {
